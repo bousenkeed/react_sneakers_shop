@@ -1,0 +1,43 @@
+.favorites {
+    padding: 0 60px 40px;
+}
+
+.favorites h1 {
+    margin: 40px 0;
+
+}
+
+.cards {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+}
+
+.message {
+    font-size: 20px;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

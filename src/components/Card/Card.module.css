@@ -1,0 +1,143 @@
+.card {
+    border: 1px solid #f3f3f3;
+    border-radius: 40px;
+    background-color: #fff;
+    padding: 30px 35px;
+    transition: box-shadow 0.2s ease, transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-height: 300px;
+    max-width: 232px;
+}
+
+.card:hover {
+    box-shadow: 0px 14px 35px 0 rgba(0, 0, 0, 0.15);
+    transform: translate(0, -5px);
+}
+
+.noHover:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+.photoContainer {
+    position: relative;
+}
+
+.favoritesButton {
+    position: absolute;
+    cursor: pointer;
+    background-color: transparent;
+    width: 22%;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    border: 1px solid #f8f8f8;
+    border-radius: 7px;
+    transition:all 0.2s;
+}
+
+.favoritesButton:hover {
+    opacity: 0.7;
+}
+
+.activeFavButton {
+    background-color: #fef0f0;
+}
+
+.activeFavButton svg {
+    fill: #ff8585;
+    stroke: #ff8585;
+}
+
+.activeFavButton svg path {
+    stroke: #ff8585;
+}
+
+.photo {
+    margin-bottom: 14px;
+    width: 100%;
+}
+
+.card h4 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 14px;
+}
+
+.bottomContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info span {
+    font-weight: 500;
+    font-size: 11px;
+    color: #bdbdbd;
+    margin-bottom: 2px;
+}
+
+.info b {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+}
+
+.addButton {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    width: 22%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addButton img {
+    width: 100%;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.buttonPlus {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+}
+
+.buttonPlus img {
+    transition: 0.3s;
+}
+
+.buttonPlus:hover img {
+    transform: scale(1.5);
+}
+
+.buttonCheck {
+    background: linear-gradient(180deg, #89f09c 0%, #3cc755 100%);
+    border: none;
+}
+
+.buttonCheck:hover {
+    opacity: 0.5;
+}

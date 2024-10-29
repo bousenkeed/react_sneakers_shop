@@ -1,0 +1,13 @@
+.app {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.04);
+    background: #fff;
+    border-radius: 20px;
+    margin: 85px auto 0;
+    max-width: 1080px;
+}
+
+@media (max-width: 768px) {
+    .app {
+        margin-top: 0;
+    }
+}
