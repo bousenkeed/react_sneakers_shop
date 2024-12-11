@@ -1,0 +1,1 @@
+Для работы приложения надо запустить json-server - npm run server
